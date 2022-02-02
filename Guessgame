@@ -1,0 +1,18 @@
+Number=15
+attempt=10
+i=1
+while(i<attempt+1):
+  a=int(input("Guess number"))
+  if(a>Number):
+    print("You guess high number")
+    print("Attempt left",attempt-i)
+    i=i+1
+  elif(a<Number):
+    print("You guess low number")
+    print("Attempt left",attempt-i)
+    i=i+1
+  else:
+    print("You guess right number")
+    print("Number of attempt use=",i)
+    break
+print("Game over")
